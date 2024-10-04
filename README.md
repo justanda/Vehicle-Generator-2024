@@ -5,7 +5,6 @@
 ## Description
 
 The purpose of this is to create a vehicle generator that displays what ive learned in type script and showcase what I have learned. What we have done is imported and implemented in our ts files so they can function together to deliver our end result in our command line. We have wrote out some of the functions to make this application complete.
-https://drive.google.com/file/d/1JbL8CEyTeAd78PZ0VTTEg_eeqCudJz3v/view
 
 ## Video Link
 
