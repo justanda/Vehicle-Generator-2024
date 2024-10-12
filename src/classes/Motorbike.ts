@@ -36,7 +36,11 @@ class Motorbike extends Vehicle {
     this.year = year;
     this.weight = weight;
     this.topSpeed = topSpeed;
-    this.wheels = wheels.length === 2 ? wheels : [new Wheel(), new Wheel()];
+    if (wheels.length !== 4) {
+      this.wheels = [new Wheel(), new Wheel(), new Wheel(), new Wheel()];
+    } else {
+      this.wheels = wheels;
+    }
   }
   // TODO: The constructor should initialize the properties of the Motorbike class
   // TODO: The constructor should check if the wheels array has 2 elements and create 2 new default Wheel objects if it does not
@@ -58,6 +62,8 @@ class Motorbike extends Vehicle {
     console.log(`Year: ${this.year}`);
     console.log(`Weight: ${this.weight} lbs`);
     console.log(`Top Speed: ${this.topSpeed} mph`);
+    console.log(`Color: ${this.color}`);
+    console.log(`Wheels: ${this.wheels.length}`);
   }
 }
 
